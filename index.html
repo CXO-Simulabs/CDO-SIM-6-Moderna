@@ -779,9 +779,6 @@ function selectOption(idx){
   else if(pctQ>=50) opts[idx].style.borderColor='#d97706';
   else opts[idx].style.borderColor='#dc2626';
 
-  document.getElementById('q-feedback-text').textContent = chosen.feedback;
-  document.getElementById('q-feedback').style.display='block';
-
   document.getElementById('next-btn').style.display='inline-block';
   document.getElementById('next-btn').textContent =
     state.currentQ < questions.length-1 ? 'Next Question →' : 'See My Results →';
